@@ -1,5 +1,5 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-22.04",
 	"features": {
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
 	}
