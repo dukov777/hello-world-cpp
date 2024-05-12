@@ -1,0 +1,278 @@
+[
+    {
+        "Id": "deb6dc6b246535449c3354b8a8dda608eaff6b048eb6b757a9f1cc845696efbd",
+        "Created": "2024-05-04T13:56:32.882701166Z",
+        "Path": "/bin/sh",
+        "Args": [
+            "-c",
+            "echo Container started\ntrap \"exit 0\" 15\n\nexec \"$@\"\nwhile sleep 1 \u0026 wait $!; do :; done",
+            "-"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 16686,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-05-04T14:36:47.378759715Z",
+            "FinishedAt": "2024-05-04T13:59:51.629979925Z"
+        },
+        "Image": "sha256:5e51069a9b9a4eff7667fe018d3463945bcaee7fba7b3ee553bc6170a4a076e3",
+        "ResolvConfPath": "/var/lib/docker/containers/deb6dc6b246535449c3354b8a8dda608eaff6b048eb6b757a9f1cc845696efbd/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/deb6dc6b246535449c3354b8a8dda608eaff6b048eb6b757a9f1cc845696efbd/hostname",
+        "HostsPath": "/var/lib/docker/containers/deb6dc6b246535449c3354b8a8dda608eaff6b048eb6b757a9f1cc845696efbd/hosts",
+        "LogPath": "/var/lib/docker/containers/deb6dc6b246535449c3354b8a8dda608eaff6b048eb6b757a9f1cc845696efbd/deb6dc6b246535449c3354b8a8dda608eaff6b048eb6b757a9f1cc845696efbd-json.log",
+        "Name": "/compassionate_wing",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": [
+            "2505c6e241a4484a41670b14b0ef86a05f0801ab260772af3a1e25b19580f483",
+            "7bee1ae253a47fff15d7de01f29f882cda31afcb989da69b5ef15696f11b928b",
+            "08ce0ca118241c988ae1f696c45586d5b84ef0dc9c354741d2acc50bfbd76faa",
+            "0d132b0000019a8a19b5be27cf8aa7eedc949c36d61a6066d9e46503194912ef",
+            "dc9c9a59cfe3eb9911f0cd52384e8592145874c7f5e29bff7afd12dded6e2fc6",
+            "e6c450d7cdad088830d80fa5272350109815ec2e8cfda636775c07bd5df88265",
+            "a29c30bd9073ed4982e04416e48d522693499471f1276b1cc26d305a969eb9d6"
+        ],
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": [
+                "SYS_PTRACE"
+            ],
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+                "seccomp=unconfined"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "/Users/petarlalov/development/hello-world-cpp",
+                    "Target": "/workspaces/hello-world-cpp",
+                    "Consistency": "cached"
+                },
+                {
+                    "Type": "volume",
+                    "Source": "062u8n8l08a3fll40vvquee8jd7mih6ld5l0e8bihkdhf8ptjn5m-shellhistory",
+                    "Target": "/dc/shellhistory"
+                },
+                {
+                    "Type": "volume",
+                    "Source": "vscode",
+                    "Target": "/vscode"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/9c94b14b57e81c94895f86e1c722b288e0977c0f34c4eecb33319a72e09a51fa-init/diff:/var/lib/docker/overlay2/fdybbjanwdpt446xenh5q9y05/diff:/var/lib/docker/overlay2/a593bjl5wp0dhk8iec26eawir/diff:/var/lib/docker/overlay2/3ed43mw4giu8a8lama6csnrpr/diff:/var/lib/docker/overlay2/2tviumcusyce60e783bmg5tul/diff:/var/lib/docker/overlay2/zkn0l2bulzpfe8co23fovyk32/diff:/var/lib/docker/overlay2/eb74167e199d716a795285882a22f68126ed48ac2bd44ff3692457dae7a0ff22/diff:/var/lib/docker/overlay2/5c758cd903527587ceabacfccd01d611876c045e15673d53c761a73ae1b7f211/diff:/var/lib/docker/overlay2/4db4d6c3ed7aa8d003cee7e4ff0d47e54b2105f64e3178debbd9f46c204476bd/diff:/var/lib/docker/overlay2/426dd018ed8d66eec3b6233fe25c0b1cdd92378c2dd71a72d821586113ba78ac/diff:/var/lib/docker/overlay2/7a9d39603b72bd93dcc0b7e70eec7ad130a381060ccf9ff1b85737d3924817f2/diff:/var/lib/docker/overlay2/6a9ef00b2f7df9e8a3409baaed9b0b561fc34fc07b718b071c48a3712f9b9c5a/diff:/var/lib/docker/overlay2/c16423b62dee7cd69158c8e6ecf1e54ffcc7d934b5353150b79f9bd04f245972/diff:/var/lib/docker/overlay2/c74c1a773aeb9397886ed16d4a47f2d7e7c555f09f080f4cf5d81df0d7f8c2ec/diff:/var/lib/docker/overlay2/d928adcb4804953f4f06c4a2948319892df45c894e0266ddc14d9294456c2658/diff:/var/lib/docker/overlay2/a8fa793998951a7f3c076c81e04cf8aa9118a44766a883368abad2716b8b9418/diff:/var/lib/docker/overlay2/f379a5e85fcbdb43e8798a9c4b1c9c8f85ad764595e8aaabb37db69274f184cb/diff:/var/lib/docker/overlay2/93f7d669676af1597ff9be1e8f1f583645be2653503b885f89f4acd2c1b17958/diff:/var/lib/docker/overlay2/feadf7419c943f45ce3cccda314f4c014cfb9ee6e23031c27930f6e9f20cd327/diff:/var/lib/docker/overlay2/4cd039029f681ef8a0a66d4c7b5d8659b49d641390b9e8b7b71ddc8109fcd57a/diff:/var/lib/docker/overlay2/636c2e07e7811ba63a1399fc80588d63dbde2cbcc7ceb868832e17a7210a6894/diff:/var/lib/docker/overlay2/5147a43b1e72c1509f7a508e45591475e21e038c492c39a5107fe43d5680a265/diff",
+                "MergedDir": "/var/lib/docker/overlay2/9c94b14b57e81c94895f86e1c722b288e0977c0f34c4eecb33319a72e09a51fa/merged",
+                "UpperDir": "/var/lib/docker/overlay2/9c94b14b57e81c94895f86e1c722b288e0977c0f34c4eecb33319a72e09a51fa/diff",
+                "WorkDir": "/var/lib/docker/overlay2/9c94b14b57e81c94895f86e1c722b288e0977c0f34c4eecb33319a72e09a51fa/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "vscode",
+                "Source": "/var/lib/docker/volumes/vscode/_data",
+                "Destination": "/vscode",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/Users/petarlalov/development/hello-world-cpp",
+                "Destination": "/workspaces/hello-world-cpp",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "062u8n8l08a3fll40vvquee8jd7mih6ld5l0e8bihkdhf8ptjn5m-shellhistory",
+                "Source": "/var/lib/docker/volumes/062u8n8l08a3fll40vvquee8jd7mih6ld5l0e8bihkdhf8ptjn5m-shellhistory/_data",
+                "Destination": "/dc/shellhistory",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "deb6dc6b2465",
+            "Domainname": "",
+            "User": "root",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/vcpkg",
+                "VCPKG_ROOT=/usr/local/vcpkg",
+                "VCPKG_DOWNLOADS=/usr/local/vcpkg-downloads"
+            ],
+            "Cmd": [
+                "-c",
+                "echo Container started\ntrap \"exit 0\" 15\n\nexec \"$@\"\nwhile sleep 1 \u0026 wait $!; do :; done",
+                "-"
+            ],
+            "Image": "vsc-hello-world-cpp-54e4f58cabde2a7580310f809b835984771560bef3da70b7f0a735fe85c83d90-features",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/bin/sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "dev.containers.features": "common",
+                "dev.containers.id": "cpp",
+                "dev.containers.release": "v0.3.34",
+                "dev.containers.source": "https://github.com/devcontainers/images",
+                "dev.containers.timestamp": "Thu, 04 Apr 2024 00:08:34 GMT",
+                "dev.containers.variant": "jammy",
+                "devcontainer.config_file": "/Users/petarlalov/development/hello-world-cpp/.devcontainer/devcontainer.json",
+                "devcontainer.local_folder": "/Users/petarlalov/development/hello-world-cpp",
+                "devcontainer.metadata": "[ {\"id\":\"ghcr.io/devcontainers/features/common-utils:2\"}, {\"id\":\"ghcr.io/devcontainers/features/git:1\"}, {\"remoteUser\":\"vscode\"}, {\"id\":\"ghcr.io/devcontainers/features/git:1\"}, {\"customizations\":{\"vscode\":{\"extensions\":[\"ms-vscode.cpptools\",\"ms-vscode.cmake-tools\"]}},\"capAdd\":[\"SYS_PTRACE\"],\"securityOpt\":[\"seccomp=unconfined\"],\"remoteUser\":\"vscode\"}, {\"id\":\"ghcr.io/stuartleeks/dev-container-features/shell-history:0\",\"mounts\":[{\"source\":\"${devcontainerId}-shellhistory\",\"target\":\"/dc/shellhistory\",\"type\":\"volume\"}]} ]",
+                "org.opencontainers.image.ref.name": "ubuntu",
+                "org.opencontainers.image.version": "22.04",
+                "version": "1.0.10"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "7ffa696f96faf8e6f3c98e1c7159499f6d3d73736bd2d7a48f637ace835bbad3",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/7ffa696f96fa",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "fef0da60542c294e24c0b75b52a7aacaa70fbb576a5f55439a545c18836da7ac",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "a6edfb2b393462946f41183cc605d59f851e5df46570925147ff1f95026f602d",
+                    "EndpointID": "fef0da60542c294e24c0b75b52a7aacaa70fbb576a5f55439a545c18836da7ac",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
