@@ -113,11 +113,11 @@ void SerialCapacitors::calculate(float frequency, float current){
 	float total_power = 0;
 	float total_xc = 0;
 
-	for (int i = 0; i < caps.size(); i++){
-		caps[i]->calculate(frequency, current);
-		total_voltage += caps[i]->getVoltage();
-		total_power += caps[i]->getPower();
-		total_xc += caps[i]->getXc();
+	for(auto cap : caps){
+		cap->calculate(frequency, current);
+		total_voltage += cap->getVoltage();
+		total_power += cap->getPower();
+		total_xc += cap->getXc();
 	}
 
 	this->voltage = total_voltage;
